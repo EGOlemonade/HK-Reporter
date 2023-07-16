@@ -1,2 +1,2 @@
 # HK-Reporter
-For learning something interesting（maybe） by myself 
+Nothing but fast
