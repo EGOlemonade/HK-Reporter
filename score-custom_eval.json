@@ -1,0 +1,34 @@
+{
+  "q1": {
+    "strict_acc": 1,
+    "loose_acc": 1,
+    "rouge1": 1.0,
+    "rouge2": 1.0,
+    "rougeL": 1.0,
+    "bleurt": 0.9905331134796143
+  },
+  "q2": {
+    "strict_acc": 0,
+    "loose_acc": 0,
+    "rouge1": 1.0,
+    "rouge2": 0.75,
+    "rougeL": 0.6666666666666666,
+    "bleurt": 0.848745584487915
+  },
+  "q3": {
+    "strict_acc": 0,
+    "loose_acc": 0,
+    "rouge1": 1.0,
+    "rouge2": 0.75,
+    "rougeL": 0.7777777777777778,
+    "bleurt": 0.8426386713981628
+  },
+  "q4": {
+    "strict_acc": 1,
+    "loose_acc": 1,
+    "rouge1": 1.0,
+    "rouge2": 1.0,
+    "rougeL": 1.0,
+    "bleurt": 0.9976376295089722
+  }
+}
