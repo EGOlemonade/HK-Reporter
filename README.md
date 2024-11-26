@@ -1,7 +1,5 @@
 # QA Evaluation （Beta）
-用于评估生成的答案与问题的参考答案之间的质量，支持多个评估指标，包括 字符串准确度（String Accuracy）、ROUGE 和 BLEURT。它会逐个问题进行评估，并输出每个问题的评分结果
 
-运行此工具需要以下 Python 库：
 # requirements
 Python 3.8+
 TensorFlow
