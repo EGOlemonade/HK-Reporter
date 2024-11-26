@@ -1,11 +1,45 @@
 # QA Evaluation （Beta）
 
 # requirements
+```
 Python 3.8+
+
 TensorFlow
+
 BLEURT
+
 rouge_score
+
 ftfy
+```
+# Methods
+
+此工具的评分方法参考了论文中的评估公式，具体包括 **严格匹配**（Strict）和 **宽松匹配**（Loose）的计算方法。以下是相关的公式：
+
+### **Loose 匹配**（Loose Match）：
+对于参考答案 `R` 和生成答案 `G`，**宽松匹配**被定义为：
+
+$$
+Loose(R, G) = \frac{|R \cap G|}{|R|}
+$$
+
+- `|R|`：参考答案中的词汇数量。
+- `|R \cap G|`：参考答案和生成答案的交集词汇数。
+
+### **Strict 匹配**（Strict Match）：
+**严格匹配**则检查参考答案和生成答案是否完全一致：
+
+$$
+Strict(R, G) = \mathbb{1}[Loose(R, G) = 1]
+$$
+
+- 如果宽松匹配为 1，则严格匹配得分为 1，否则为 0。
+
+---
+
+
+
+
 
 # Usage
 testbasement.json：包含问题及其参考答案。
@@ -54,7 +88,7 @@ generated_result.json Example：
 python eval.py
 ```
 # Example Output
-Here’s an example of the output you will see for each question:
+
 ```
 Question ID: q1
 STRICT_ACC: 1
@@ -80,6 +114,4 @@ ROUGE2: 0.75
 ROUGEL: 0.7777777777777778
 BLEURT: 0.9145138263702393
 ```
-# License
-Provided under the MIT License.
 
