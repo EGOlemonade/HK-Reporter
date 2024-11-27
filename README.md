@@ -90,28 +90,31 @@ python eval.py
 # Example Output
 
 ```
+AVG ACC: 0.5000
+PCT PFT: 0.5000
+=== ROUGE ===
+--- rouge1 ---
+precision: 1.0
+recall: 1.0
+fscore: 1.0
+--- rouge2 ---
+precision: 0.875
+recall: 0.875
+fscore: 0.875
+--- rougeL ---
+precision: 0.861111111111111
+recall: 0.861111111111111
+fscore: 0.861111111111111
+
+BLEURT: 0.8911631256341934
+
 Question ID: q1
-STRICT_ACC: 1
-LOOSE_ACC: 1
-ROUGE1: 1.0
-ROUGE2: 0.8333333333333334
-ROUGEL: 0.8148148148148148
-BLEURT: 0.8939730525016785
-
-Question ID: q2
-STRICT_ACC: 1
-LOOSE_ACC: 1
-ROUGE1: 1.0
-ROUGE2: 0.75
-ROUGEL: 0.6666666666666666
-BLEURT: 0.9096779227256775
-
-Question ID: q3
-STRICT_ACC: 1
-LOOSE_ACC: 1
-ROUGE1: 1.0
-ROUGE2: 0.75
-ROUGEL: 0.7777777777777778
-BLEURT: 0.9145138263702393
+ACC: 0.5
+PERFECT: 0.5
+ROUGE1: {'precision': 1.0, 'recall': 1.0, 'fscore': 1.0}
+ROUGE2: {'precision': 0.875, 'recall': 0.875, 'fscore': 0.875}
+ROUGEL: {'precision': 0.861111111111111, 'recall': 0.861111111111111, 'fscore': 0.861111111111111}
+BLEURT: 0.8911631256341934
+GPT: A  
 ```
 
